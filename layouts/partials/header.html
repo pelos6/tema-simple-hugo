@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{{ .Title }}</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/style{{ $.Site.Params.style }}.css">
+	<link rel="stylesheet" type="text/css" href="/css/estilos.css">
+	<script src="/js/caption.js"></script>
+</head>
+<body>
+<header >
+	<a href="/" style="float: left;color:#777;"><strong>{{ $.Site.Title }}</strong>
+	</a>
+	<a href="/index.xml" style="color:#777;float: left;"><strong>
+		&nbsp;
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+</strong></a>
+{{ range $i, $e:= $.Site.Params.navigation }}
+	{{ if eq $i 0}}
+	{{else}}&nbsp;&nbsp;·&nbsp;&nbsp;{{end}}
+	{{ with $.Site.GetPage "page" . }}<a href="{{ lower .Permalink }}" style="color:#777;"><strong>{{ .Title }}</strong></a>
+	{{ end }}
+{{ end }}
+
+</header>
+<!-- <h1>probando range</h1>
+<div>
+	{{ range $elem_index, $elem_val := $.Site.Params.navigation }}
+		&nbsp;&nbsp;·&nbsp;&nbsp;	el indice del array - {{ $elem_index }}  - el valor del array - {{ $elem_val }}
+		{{ with $.Site.GetPage "page" . }}
+		 el titulo de page	{{ title .Title }}
+		{{ end }}
+	{{ end }}
+	</div> -->

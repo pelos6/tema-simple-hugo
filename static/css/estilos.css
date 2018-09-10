@@ -1,0 +1,14 @@
+.searchbox input {
+  display: inline-block;
+  /* color: #fff; */
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: 0;
+  padding: 0 25px 0 30px;
+  margin: 0;
+  font-weight: 300; }
+
+body {
+  max-width: unset;
+}
