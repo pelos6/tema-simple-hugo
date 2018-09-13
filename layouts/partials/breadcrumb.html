@@ -1,4 +1,5 @@
 <div class="breadcrumb">
+<aside>
 {{ template "breadcrumb" dict "currentPage" .Page "id" .UniqueID }}
 <!-- templates -->
 {{ define "breadcrumb" }}
@@ -11,4 +12,5 @@
       <a href="{{ .currentPage.URL }}">{{ .currentPage.Title }}</a> / 
     {{ end }} 
 {{ end }}
+</aside>
 </div>
