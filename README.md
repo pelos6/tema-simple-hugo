@@ -15,7 +15,7 @@ hugo new site inicio
 * crear el tema
 
 ```bash
-hugo new theme tema
+hugo new theme tema-simple-hugo
 ```
 
 # contenido
