@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+{{ partial "breadcrumb.html" . }}
+<br>
+     <ul>
+      {{ template "section-tree-nav" . }}
+    </ul>
+    {{ define "section-tree-nav" }}
+      {{ range .Sections}}
+        <li><a href="{{ .RelPermalink}}">{{ .Title }}</a>
+            <ul>
+                {{ range .Pages }}
+                <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
+                {{ end }}
+                <ul> {{ template "section-tree-nav" . }} </ul>
+            </ul>
+        </li>
+      {{ end }}
+    {{ end }}
+{{ partial "footer.html" . }}
+</body>
+</html>
