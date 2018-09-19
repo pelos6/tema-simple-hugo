@@ -1,0 +1,47 @@
+/* body {
+  margin: 40px 10px;
+  padding: 0;
+  font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+#calendar {
+  max-width: 900px; 
+  max-width: 90%;
+  margin: 0 auto;
+}  */
+
+.primaria {
+  background-color: yellowgreen;
+  color: black;
+}
+
+.secundaria {
+  background-color: orange;
+  color: black;
+}
+
+.vacaciones {
+  background-color: rgba(0, 162, 255, 0.301);
+  color: black;
+}
+
+.otros {
+  background-color: rgba(255, 166, 0, 0.301);
+  color: black;
+}
+/* 
+#titulo{
+  text-align: center
+} */
+
+.searchbox input {
+  display: inline-block;
+  color: #fff;
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: 0;
+  padding: 0 25px 0 30px;
+  margin: 0;
+  font-weight: 300; }
