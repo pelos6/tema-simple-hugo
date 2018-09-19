@@ -1,7 +1,7 @@
 
 
 
-<div class="content">
+<div class="content" id="content">
   <h1>{{ title .Data.Term  }} posts</h1>
       {{ range first 100000 .Pages }}
         {{ if eq .Type "post"}}

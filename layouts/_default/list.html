@@ -1,20 +1,20 @@
 {{ partial "header.html" . }}
 {{ partial "breadcrumb.html" . }}
-<br>
-     <ul>
-     {{ range .Sections}}
-        <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
-     {{ end }}
-    </ul>
-     {{ range .Pages }}
-     <ul>
-        <aside>{{ if .Params.Date }} {{ .Date.Format "January 2, 2006"}} {{ end }}        
-             {{ if .Params.tags }} <em>{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}<a href="/tags/{{$e}}/">{{ $e }}</a>{{ end }}</em> {{ end }}
-        </aside>
-        <a href="{{ .Permalink }}" style="color:black;">{{ .Title }}</a>
-        {{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span> {{ end }}
-      </ul>
-     {{ end }}
-{{ partial "footer.html" . }}
-</body>
-</html>
+    <div class="content" id="content">
+      <br>
+          <ul>
+          {{ range .Sections}}
+              <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
+          {{ end }}
+          </ul>
+          {{ range .Pages }}
+          <ul>
+              <aside>{{ if .Params.Date }} {{ .Date.Format "January 2, 2006"}} {{ end }}        
+                  {{ if .Params.tags }} <em>{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}<a href="/tags/{{$e}}/">{{ $e }}</a>{{ end }}</em> {{ end }}
+              </aside>
+              <a href="{{ .Permalink }}" style="color:black;">{{ .Title }}</a>
+              {{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span> {{ end }}
+            </ul>
+          {{ end }}
+    </div>
+  {{ partial "footer.html" . }}

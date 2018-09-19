@@ -5,7 +5,7 @@
 {{ partial "toc.html" . }}
 
 
-<div class="content">
+<div class="content" id="content">
 	<h1>{{ .Title }} <aside>{{ range .Params.tags }}<a href="/tags/{{.}}/" class="w3-tag">/{{.}}</a>&nbsp;&nbsp;&nbsp;{{end}}</aside></h1>
 	{{ .Content }}
 </div>
@@ -24,9 +24,5 @@
 	{{ if .NextInSection }}<a href="{{ .NextInSection.URL }}" style="float:right;">{{ .NextInSection.Title }} →</a>{{ end }}
 	</p>
 {{ end }}
-
-
-
-
 
 {{ partial "footer.html" . }}

@@ -36,3 +36,20 @@ para el enlace arriba*/
 .arriba-link::after {
   content: none;
 }
+
+footer {
+  position:absolute;
+  /* height:50px; */
+  /* line-height:50px; */
+  /* background:black; */
+  /* color:white; */
+  /* text-align:center; */
+  /* left:0; */
+  /* width:100%; */
+  /* bottom:0; */
+}
+
+footer.bottom {
+   height:50px;
+  bottom:0;
+  }
