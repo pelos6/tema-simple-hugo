@@ -1,5 +1,5 @@
 function ajustarPie() {
-  console.log('ajustar pie');
+  // console.log('ajustar pie');
   var winH = $(window).height();
   var docH = $("#content").height();
   var pieH = $("footer").height();
