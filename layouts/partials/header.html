@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>{{ .Title }}</title>
-  <link rel="shortcut icon" href=" /favicon.ico " type="image/x-icon">
-  <link rel="icon" href=" /favicon.ico " type="image/x-icon">
+	<link rel="shortcut icon" href=" /favicon.ico " type="image/x-icon">
+	<link rel="icon" href=" /favicon.ico " type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="/css/style{{ $.Site.Params.style }}.css">
 	<link rel="stylesheet" type="text/css" href="/css/estilos.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/moment.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.3.1/locale/es.js'></script>
 	<script src="/js/caption.js"></script>
 </head>
+
 <body>
-<header>
-	<div id="header"></div>
-	  <!-- para subir desde el final de la pagina-->
-    <a name="arriba" class="arriba-link"></a>
-	<a href="/" style="float: left;color:#777;"><strong>{{ $.Site.Title }}</strong>
-	</a>
-{{ range $i, $e:= $.Site.Params.navigation }}
-	{{ if eq $i 0}}
-	{{else}}&nbsp;&nbsp;·&nbsp;&nbsp;{{end}}
-	{{ with $.Site.GetPage "page" . }}<a href="{{ lower .Permalink }}" style="color:#777;"><strong>{{ .Title }}</strong></a>
-	{{ end }}
-{{ end }}
-<div class="tooltip"> versión:  {{ .Site.Data.sitio.Version }} 
-	<!-- <span style="float: right; color:#777; font-size: 80% "></span> -->
-	<span class="tooltiptext"> fecha de creación: {{ .Site.Data.sitio.fechaCreacion }} </span>
-</div>
-</header>
+	<header>
+		<div id="header"></div>
+		<!-- para subir desde el final de la pagina-->
+		<a name="arriba" class="arriba-link"></a>
+		<a href="/" style="float: left;color:#777;"><strong>{{ $.Site.Title }}</strong>
+		</a>
+		{{ range $i, $e:= $.Site.Params.navigation }}
+		{{ if eq $i 0}}
+		{{else}}&nbsp;&nbsp;·&nbsp;&nbsp;{{end}}
+		{{ with $.Site.GetPage "page" . }}<a href="{{ lower .Permalink }}" style="color:#777;"><strong>{{ .Title }}</strong></a>
+		{{ end }}
+		{{ end }}
+		<div class="tooltip"> versión: {{ .Site.Data.sitio.Version }}
+			<!-- <span style="float: right; color:#777; font-size: 80% "></span> -->
+			<span class="tooltiptext"> fecha de creación: {{ .Site.Data.sitio.fechaCreacion }} </span>
+		</div>
+	</header>

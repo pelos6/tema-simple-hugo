@@ -1,9 +1,9 @@
 function ajustarPie() {
-  // console.log('ajustar pie');
+  //  console.log('ajustar pie');
   var winH = $(window).height();
   var docH = $("#content").height();
   var pieH = $("footer").height();
-  // console.log('ajustar pie: winH ' + winH + ' docH ' + docH + ' pieH ' + pieH);
+   console.log('ajustar pie: winH ' + winH + ' docH ' + docH + ' pieH ' + pieH);
   if (docH + pieH < winH) {
   // console.log('ajustar pie docH + pieH < winH');
     $("footer").attr("class", "bottom");
@@ -12,13 +12,27 @@ function ajustarPie() {
     $("footer").attr("class", "");
   } 
 }
-$(document).ready(ajustarPie);
+// $(document).ready(ajustarPie);
 $(window).on("resize", ajustarPie);
-$(document).ready(
 
-  function () {
+$(document).ready(function() {
+  // console.log('antes de calendar '+ $("#content").height());
+  $('#calendar').fullCalendar({
+  header: {
+      left: 'prev,next, today',
+      center: 'title',
+      right: 'month,agendaWeek,agendaDay,listWeek',
+    },
+    //  defaultDate: '2018-03-12',
+     editable: true,
+     eventLimit: true, // allow "more" link when too many events
+     events: '/event/index.json'
+   });
+  //  console.log('despues de calendar '+ $("#content").height());
+  // despues de montar el calendario ajustamos el pie
+   ajustarPie();
 
-    // Comprobar si estamos, al menos, 100 px por debajo de la posición top
+  // Comprobar si estamos, al menos, 100 px por debajo de la posición top
     // para mostrar o esconder el botón
     $(window).scroll(function () {
       if ($(this).scrollTop() > 100) {
@@ -43,27 +57,4 @@ $(document).ready(
 
     });
 
-    // var window_height = $(window).height();
-    // var window_height = window.innerHeight;
-    // console.log('la altura de la ventana innerHeight ' + window_height);
-    // var page_height = $('#header').height() + $('#content').height();
-    // console.log('la altura del header ' + $('#header').height());
-    // console.log('la altura del content ' + $('#content').height());
-    // console.log('la altura de la pagina page_height ' + page_height);
-    // var footer_height = $('#footer').height();
-    // console.log('la altura de footer ' + footer_height);
-
-    // if (page_height + footer_height < window_height) {
-    //   console.log('page_height < window_height  ');
-    //   margin_footer = window_height - page_height - footer_height - 150;
-    //   console.log('margin_footer ' + margin_footer);
-    //   $('#footer').css('margin-top', margin_footer);
-    // }
-    // if (page_height < window_height) {
-    // console.log ('page_height < window_height  ');
-    //     margin_footer = window_height - page_height - footer_height - 240;
-    //     console.log ('margin_footer ' + margin_footer);
-    //     $('#footer').css('margin-top', margin_footer);
-    // }
-
-  });
+});

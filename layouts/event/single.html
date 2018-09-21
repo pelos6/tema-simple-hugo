@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-
+<div class="content" id="content"></div>
     <p>Detalle del evento:</p>
     <h2>{{ .Title }}</h2>
     {{ if ne .Params.Inicio nil }}
@@ -11,5 +11,5 @@
     {{ end }}
     <p>Etapa: {{ .Params.Estilo }}</p>
     {{ .Content }}
-
+</div>
 {{ partial "footer.html" . }}
