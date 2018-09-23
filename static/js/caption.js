@@ -3,7 +3,7 @@ function ajustarPie() {
   var winH = $(window).height();
   var docH = $("#content").height();
   var pieH = $("footer").height();
-   console.log('ajustar pie: winH ' + winH + ' docH ' + docH + ' pieH ' + pieH);
+  //  console.log('ajustar pie: winH ' + winH + ' docH ' + docH + ' pieH ' + pieH);
   if (docH + pieH < winH) {
   // console.log('ajustar pie docH + pieH < winH');
     $("footer").attr("class", "bottom");
