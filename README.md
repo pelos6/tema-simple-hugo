@@ -4,11 +4,6 @@
   * en base a [onetwothree](https://github.com/schollz/onetwothree)
 * `Use it at your own risk!`
 
-# características
-
-* búsqueda con [`lunr.js`](https://lunrjs.com/)
-* tags
-
 # primer paso
 
 * crear el sitio
@@ -61,3 +56,14 @@ hugo new post/hola-mi-mundo.md
 ## repositorio
 
 [bitbucket](https://bitbucket.org/javieriranzo3/tema-simple-hugo)
+
+
+# características
+
+* búsqueda con [`lunr.js`](https://lunrjs.com/)
+* tags
+
+# pendiente
+
+* los estilos del menú al archivo de estilos
+* cargar solo los JavaScript que se necesitan en cada página 
