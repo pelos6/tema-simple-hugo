@@ -4,6 +4,11 @@
   * en base a [onetwothree](https://github.com/schollz/onetwothree)
 * `Use it at your own risk!`
 
+# características
+
+* búsqueda con [`lunr.js`](https://lunrjs.com/)
+* tags
+
 # primer paso
 
 * crear el sitio
