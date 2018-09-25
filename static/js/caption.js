@@ -16,21 +16,22 @@ function ajustarPie() {
 $(window).on("resize", ajustarPie);
 
 $(document).ready(function() {
+  // el calendario tiene origen de datos distinto segun la página pues pueden existir varios
   // console.log('antes de calendar '+ $("#content").height());
-  $('#calendar').fullCalendar({
-  header: {
-      left: 'prev,next, today',
-      center: 'title',
-      right: 'month,agendaWeek,agendaDay,listWeek',
-    },
-    //  defaultDate: '2018-03-12',
-     editable: true,
-     eventLimit: true, // allow "more" link when too many events
-     events: '/event/index.json'
-   });
+  // $('#calendar').fullCalendar({
+  // header: {
+  //     left: 'prev,next, today',
+  //     center: 'title',
+  //     right: 'month,agendaWeek,agendaDay,listWeek',
+  //   },
+  //   //  defaultDate: '2018-03-12',
+  //    editable: true,
+  //    eventLimit: true, // allow "more" link when too many events
+  //    events: '/event/index.json'
+  //  });
   //  console.log('despues de calendar '+ $("#content").height());
   // despues de montar el calendario ajustamos el pie
-   ajustarPie();
+  //  ajustarPie();
 
   // Comprobar si estamos, al menos, 100 px por debajo de la posición top
     // para mostrar o esconder el botón
@@ -53,7 +54,7 @@ $(document).ready(function() {
       e.preventDefault();
       $('html, body').animate({
         scrollTop: 0
-      }, 800);
+      }, 400);
 
     });
 

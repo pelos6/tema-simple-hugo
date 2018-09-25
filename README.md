@@ -62,6 +62,8 @@ hugo new post/hola-mi-mundo.md
 
 * búsqueda con [`lunr.js`](https://lunrjs.com/)
 * tags
+* varios posibles calendarios
+* footer que se adapta a la página aún siendo corta se queda al final
 
 # pendiente
 
