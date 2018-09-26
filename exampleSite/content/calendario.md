@@ -27,10 +27,10 @@ draft: false
        eventLimit: true, // allow "more" link when too many events
        events: '/event/index.json'
      });
-
+      // se vuelve al ajusta el pie una vez montado el calendario
+      ocultarPie();
   });
-  // se vuelve al ajusta el pie una ver montado el calendario
- ajustarPie();
+
 </script>
 
 <div id='calendar'></div>
