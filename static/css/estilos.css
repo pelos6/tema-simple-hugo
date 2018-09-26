@@ -64,18 +64,40 @@ footer.bottom {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 400px;
   background-color: gray;
   color: #fff;
-  text-align: left;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  width: 80px;
+  top: 100%;
+  left: 50%; 
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+   /* Position the tooltip */
+  position: absolute;
+}
+
+.tooltip .tooltiptextversion{
+  visibility: hidden;
+  background-color: gray;
+  color: #fff;
+  text-align: center;
   border-radius: 6px;
   padding: 5px 0;
 
-  /* Position the tooltip */
+  width: 200px;
+  top: 100%;
+  left: 50%; 
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+   /* Position the tooltip */
   position: absolute;
-  z-index: 1;
+  /*z-index: 1; */
 }
 
 .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptextversion {
   visibility: visible;
 }
