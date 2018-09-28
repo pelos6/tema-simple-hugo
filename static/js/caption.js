@@ -3,7 +3,7 @@ function ajustarPie() {
   var winH = $(window).height();
   var docH = $("#content").height();
   var pieH = $("footer").height();
-  //  console.log('ajustar pie: winH ' + winH + ' docH ' + docH + ' pieH ' + pieH);
+  console.log('ajustar pie: winH ' + winH + ' docH ' + docH + ' pieH ' + pieH);
   if (docH + pieH < winH) {
   // console.log('ajustar pie docH + pieH < winH');
     $("footer").attr("class", "bottom");
@@ -12,28 +12,17 @@ function ajustarPie() {
     $("footer").attr("class", "");
   } 
 }
+
+function ocultarPie() {
+    console.log('ocultar pie');
+    $("footer").attr("class", "hide");
+
+}
 // $(document).ready(ajustarPie);
 $(window).on("resize", ajustarPie);
 
 $(document).ready(function() {
-  // el calendario tiene origen de datos distinto segun la página pues pueden existir varios
-  // console.log('antes de calendar '+ $("#content").height());
-  // $('#calendar').fullCalendar({
-  // header: {
-  //     left: 'prev,next, today',
-  //     center: 'title',
-  //     right: 'month,agendaWeek,agendaDay,listWeek',
-  //   },
-  //   //  defaultDate: '2018-03-12',
-  //    editable: true,
-  //    eventLimit: true, // allow "more" link when too many events
-  //    events: '/event/index.json'
-  //  });
-  //  console.log('despues de calendar '+ $("#content").height());
-  // despues de montar el calendario ajustamos el pie
-  //  ajustarPie();
-
-  // Comprobar si estamos, al menos, 100 px por debajo de la posición top
+    // Comprobar si estamos, al menos, 100 px por debajo de la posición top
     // para mostrar o esconder el botón
     $(window).scroll(function () {
       if ($(this).scrollTop() > 100) {
@@ -58,4 +47,5 @@ $(document).ready(function() {
 
     });
 
+    ajustarPie();
 });

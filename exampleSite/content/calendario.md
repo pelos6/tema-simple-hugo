@@ -27,7 +27,8 @@ draft: false
        eventLimit: true, // allow "more" link when too many events
        events: '/event/index.json'
      });
-
+      // se vuelve al ajusta el pie una vez montado el calendario
+      ocultarPie();
   });
 
 </script>
