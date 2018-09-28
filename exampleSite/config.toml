@@ -9,10 +9,37 @@ theme = "tema-simple-hugo"
 pluralizeListTitles = false
 # canonifyurls = true
 
+# para poder usar emojis
+enableEmoji = true
+
 DefaultContentLanguage = "es"
 metaDataFormat = "yaml"
-pygmentsUseClasses = true
-pygmentCodeFences = true
+
+# para resaltar el código
+# pygmentsUseClasses = true
+# pygmentCodeFences = true
+pygmentsUseClasses = false
+# choose one:
+#pygmentsStyle = "autumn"
+#pygmentsStyle = "borland"
+#pygmentsStyle = "bw"
+#pygmentsStyle = "colorful"
+#pygmentsStyle = "default"
+# pygmentsStyle = "emacs"
+#pygmentsStyle = "friendly"
+#pygmentsStyle = "fruity"
+#pygmentsStyle = "manni"
+pygmentsStyle = "monokai"
+#pygmentsStyle = "murphy"
+#pygmentsStyle = "native"
+#pygmentsStyle = "pastie"
+#pygmentsStyle = "perldoc"
+#pygmentsStyle = "rrt"
+#pygmentsStyle = "tango"
+#pygmentsStyle = "trac"
+#pygmentsStyle = "vim"
+#pygmentsStyle = "vs"
+
 #disqusShortname = "XXX"
 #googleAnalytics = "XXX"
 

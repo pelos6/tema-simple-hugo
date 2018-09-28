@@ -29,8 +29,7 @@ draft: false
      });
 
   });
-  // se vuelve al ajusta el pie una ver montado el calendario
- ajustarPie();
+
 </script>
 
 <div id='calendar'></div>
