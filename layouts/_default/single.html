@@ -25,6 +25,6 @@
 	</p>
 {{ end }}
 
-{{ if (ne .Page.Title "calendario") }}
+{{ if not ( in .Page.Title "calendario") }}
 	{{ partial "footer.html" . }}
 {{ end }}
