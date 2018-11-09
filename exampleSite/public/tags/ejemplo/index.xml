@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ejemplo on para plantilla simple hugo</title>
+    <link>/tags/ejemplo/</link>
+    <description>Recent content in Ejemplo on para plantilla simple hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 28 Sep 2018 21:13:22 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ejemplo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>plantilla</title>
+      <link>/2018/09/28/</link>
+      <pubDate>Fri, 28 Sep 2018 21:13:22 +0000</pubDate>
+      
+      <guid>/2018/09/28/</guid>
+      <description>propósito  este es el sitio de ejemplo para probar y desarrollar el tema tema-simple-hugo en base al tema onetwothree de schollz
+ mas información en el post sobre la plantilla
+  tema-simple-hugo  para tener una plantilla que poder usar en varios proyectos con Hugo  en base a onetwothree  Use it at your own risk!  primer paso  crear el sitio  hugo new site inicio   crear el tema  hugo new theme tema-simple-hugo  contenido  creo un primer post  hugo new post/holaMundo.</description>
+    </item>
+    
+  </channel>
+</rss>

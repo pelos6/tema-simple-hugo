@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plantilla on para plantilla simple hugo</title>
+    <link>/tags/plantilla/</link>
+    <description>Recent content in Plantilla on para plantilla simple hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 28 Sep 2018 21:13:22 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/plantilla/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>plantilla</title>
+      <link>/2018/09/28/</link>
+      <pubDate>Fri, 28 Sep 2018 21:13:22 +0000</pubDate>
+      
+      <guid>/2018/09/28/</guid>
+      <description>propósito  este es el sitio de ejemplo para probar y desarrollar el tema tema-simple-hugo en base al tema onetwothree de schollz
+ mas información en el post sobre la plantilla
+  tema-simple-hugo  para tener una plantilla que poder usar en varios proyectos con Hugo  en base a onetwothree  Use it at your own risk!  primer paso  crear el sitio  hugo new site inicio   crear el tema  hugo new theme tema-simple-hugo  contenido  creo un primer post  hugo new post/holaMundo.</description>
+    </item>
+    
+    <item>
+      <title>calendario</title>
+      <link>/2018/09/27/</link>
+      <pubDate>Thu, 27 Sep 2018 21:13:22 +0000</pubDate>
+      
+      <guid>/2018/09/27/</guid>
+      <description> conseguir que si se pone tramos mayores de un día la información que sale sea coherente  --- inicio: 2018-10-09 fin: 2018-11-01 title: &amp;quot;VACACIONES JAVIER&amp;quot; estilo: &amp;quot;vacaciones&amp;quot; allday: false output: [&amp;quot;JSON&amp;quot;, &amp;quot;html&amp;quot;] ---   y sale desde el 10 al 31  </description>
+    </item>
+    
+    <item>
+      <title>código</title>
+      <link>/2018/09/27/</link>
+      <pubDate>Thu, 27 Sep 2018 21:13:22 +0000</pubDate>
+      
+      <guid>/2018/09/27/</guid>
+      <description> ver como sale el código en diferentes lenguajes de programación con este tema  // Loop through Divs using Javascript. var divs = document.querySelectorAll(&#39;div&#39;), i; for (i = 0; i &amp;lt; divs.length; ++i) { divs[i].style.color = &amp;quot;green&amp;quot;; }   más ejemplos  SELECT * FROM USER_TABLES;   pero no consigo que funcione 😄 los emojis si que funcionan y se pueden poner los que salen en esta lista  </description>
+    </item>
+    
+  </channel>
+</rss>

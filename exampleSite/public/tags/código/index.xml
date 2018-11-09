@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Código on para plantilla simple hugo</title>
+    <link>/tags/c%C3%B3digo/</link>
+    <description>Recent content in Código on para plantilla simple hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 27 Sep 2018 21:13:22 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/c%C3%B3digo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>código</title>
+      <link>/2018/09/27/</link>
+      <pubDate>Thu, 27 Sep 2018 21:13:22 +0000</pubDate>
+      
+      <guid>/2018/09/27/</guid>
+      <description> ver como sale el código en diferentes lenguajes de programación con este tema  // Loop through Divs using Javascript. var divs = document.querySelectorAll(&#39;div&#39;), i; for (i = 0; i &amp;lt; divs.length; ++i) { divs[i].style.color = &amp;quot;green&amp;quot;; }   más ejemplos  SELECT * FROM USER_TABLES;   pero no consigo que funcione 😄 los emojis si que funcionan y se pueden poner los que salen en esta lista  </description>
+    </item>
+    
+  </channel>
+</rss>

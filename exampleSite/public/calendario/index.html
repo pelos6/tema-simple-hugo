@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>calendario</title>
+	<link rel="shortcut icon" href=" /favicon.ico " type="image/x-icon">
+	<link rel="icon" href=" /favicon.ico " type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/estilos.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/moment.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.3.1/locale/es.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/js/jquery.countdown.js "></script>
+	<script src="/js/countdown.js"></script>
+	<script src="/js/caption.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<div id="header"></div>
+		
+		<a name="arriba" class="arriba-link"></a>
+		<a href="/" style="float: left;"><strong>para plantilla simple hugo</strong>
+		&nbsp;&nbsp;·&nbsp;&nbsp;
+		</a>
+		
+			
+			
+				<a href="/motivacion/"><strong>motivación</strong></a>
+			
+		
+			&nbsp;&nbsp;·&nbsp;&nbsp;
+				<a href="/casas/"><strong>Casas</strong></a>
+			
+		
+			&nbsp;&nbsp;·&nbsp;&nbsp;
+				<a href="/calendario/"><strong>calendario</strong></a>
+			
+		
+		<a href="/tags/" style="float: left;" class="tooltip"><strong>T</strong>
+			<span class="tooltiptext"> Etiquetas </span>
+			&nbsp;&nbsp;·&nbsp;&nbsp;
+		</a>
+		<div class="tooltip"> versión: v0.0.1
+			
+			<span class="tooltiptextversion"> fecha: 18/09/2018 - 22:22:00,35 </span>
+		</div>
+	</header>
+
+<div class="breadcrumb">
+<aside>
+
+  
+    
+  
+    
+      <a href="/">para plantilla simple hugo</a> / 
+     
+
+  
+    
+      calendario
+     
+
+
+
+</aside>
+</div>
+
+<aside>
+  <details>
+    <summary>toc</summary>
+    
+  </details>
+</aside>
+
+
+<div class="content" id="content">
+	<h1>calendario <aside></aside></h1>
+	<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script> -->
+
+<!-- <script type="text/javascript" src="/js/moment.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.3.1/locale/es.js'></script> -->
+
+<p><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.css">
+<link rel="stylesheet" media="print" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.print.css">
+<link href='/css/estilos_calendario.css' rel='stylesheet' /></p>
+
+<script>
+
+  $(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+    header: {
+        left: 'prev,next, today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay,listWeek',
+      },
+      //  defaultDate: '2018-03-12',
+       editable: true,
+       eventLimit: true, // allow "more" link when too many events
+       events: '/event/index.json'
+     });
+      // se vuelve al ajusta el pie una vez montado el calendario
+      ocultarPie();
+  });
+
+</script>
+
+<div id='calendar'></div>
+
+</div>
+
+
+
+
+
+

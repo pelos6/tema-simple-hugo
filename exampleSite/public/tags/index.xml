@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on para plantilla simple hugo</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on para plantilla simple hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 27 Sep 2018 21:13:22 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Calendario</title>
+      <link>/tags/calendario/</link>
+      <pubDate>Thu, 27 Sep 2018 21:13:22 +0000</pubDate>
+      
+      <guid>/tags/calendario/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Consejos</title>
+      <link>/tags/consejos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/consejos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Código</title>
+      <link>/tags/c%C3%B3digo/</link>
+      <pubDate>Thu, 27 Sep 2018 21:13:22 +0000</pubDate>
+      
+      <guid>/tags/c%C3%B3digo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dibujos</title>
+      <link>/tags/dibujos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dibujos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ejemplo</title>
+      <link>/tags/ejemplo/</link>
+      <pubDate>Fri, 28 Sep 2018 21:13:22 +0000</pubDate>
+      
+      <guid>/tags/ejemplo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plantilla</title>
+      <link>/tags/plantilla/</link>
+      <pubDate>Fri, 28 Sep 2018 21:13:22 +0000</pubDate>
+      
+      <guid>/tags/plantilla/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

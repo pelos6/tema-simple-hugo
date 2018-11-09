@@ -1,0 +1,103 @@
+.searchbox input {
+  display: inline-block;
+  /* color: #fff; */
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: 0;
+  padding: 0 25px 0 30px;
+  margin: 0;
+  font-weight: 300; }
+
+body {
+  max-width: unset;
+}
+
+/* Fix link box
+para el enlace arriba*/
+.arriba-link {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+	background: url('arriba.png') no-repeat;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+  opacity: 0.4;
+	background-size: 50px;
+	margin: 0 10px;
+}
+.arriba-link:hover {
+	background: url('arriba.png') no-repeat;
+  opacity: 1;
+  border-radius: 0;
+}
+
+.arriba-link::after {
+  content: none;
+}
+
+footer {
+  position:absolute;
+  /* height:50px; */
+  /* line-height:50px; */
+  /* background:black; */
+  /* color:white; */
+  /* text-align:center; */
+  /* left:0; */
+  /* width:100%; */
+  /* bottom:0; */
+}
+
+footer.bottom {
+   height:50px;
+  bottom:0;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+  float: right; 
+  font-size: 80% 
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: gray;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  width: 80px;
+  top: 100%;
+  left: 50%; 
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+   /* Position the tooltip */
+  position: absolute;
+}
+
+.tooltip .tooltiptextversion{
+  visibility: hidden;
+  background-color: gray;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  width: 200px;
+  top: 100%;
+  left: 50%; 
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+   /* Position the tooltip */
+  position: absolute;
+  /*z-index: 1; */
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptextversion {
+  visibility: visible;
+}

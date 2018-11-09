@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>plantilla</title>
+	<link rel="shortcut icon" href=" /favicon.ico " type="image/x-icon">
+	<link rel="icon" href=" /favicon.ico " type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/estilos.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/moment.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.3.1/locale/es.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/js/jquery.countdown.js "></script>
+	<script src="/js/countdown.js"></script>
+	<script src="/js/caption.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<div id="header"></div>
+		
+		<a name="arriba" class="arriba-link"></a>
+		<a href="/" style="float: left;"><strong>para plantilla simple hugo</strong>
+		&nbsp;&nbsp;·&nbsp;&nbsp;
+		</a>
+		
+			
+			
+				<a href="/motivacion/"><strong>motivación</strong></a>
+			
+		
+			&nbsp;&nbsp;·&nbsp;&nbsp;
+				<a href="/casas/"><strong>Casas</strong></a>
+			
+		
+			&nbsp;&nbsp;·&nbsp;&nbsp;
+				<a href="/calendario/"><strong>calendario</strong></a>
+			
+		
+		<a href="/tags/" style="float: left;" class="tooltip"><strong>T</strong>
+			<span class="tooltiptext"> Etiquetas </span>
+			&nbsp;&nbsp;·&nbsp;&nbsp;
+		</a>
+		<div class="tooltip"> versión: v0.0.1
+			
+			<span class="tooltiptextversion"> fecha: 18/09/2018 - 22:22:00,35 </span>
+		</div>
+	</header>
+
+<div class="breadcrumb">
+<aside>
+
+  
+    
+  
+    
+  
+    
+      <a href="/">para plantilla simple hugo</a> / 
+     
+
+  
+    
+      <a href="/post/">Post</a> / 
+     
+
+  
+    
+      plantilla
+     
+
+
+
+</aside>
+</div>
+
+<aside>
+  <details>
+    <summary>toc</summary>
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#propósito">propósito</a></li>
+<li><a href="#tema-simple-hugo"><code>tema-simple-hugo</code></a></li>
+<li><a href="#primer-paso">primer paso</a></li>
+<li><a href="#contenido">contenido</a></li>
+<li><a href="#tema">tema</a></li>
+<li><a href="#archetypes">archetypes</a></li>
+<li><a href="#templates">templates</a>
+<ul>
+<li><a href="#repositorio">repositorio</a></li>
+</ul></li>
+<li><a href="#características">características</a></li>
+<li><a href="#por-hacer">por hacer</a></li>
+<li><a href="#curiosidades">curiosidades</a></li>
+<li><a href="#examplesite"><code>exampleSite</code></a></li>
+</ul>
+</nav>
+  </details>
+</aside>
+
+
+<div class="content" id="content">
+	<h1>plantilla <aside><a href="/tags/plantilla/" class="w3-tag">/plantilla</a>&nbsp;&nbsp;&nbsp;<a href="/tags/ejemplo/" class="w3-tag">/ejemplo</a>&nbsp;&nbsp;&nbsp;</aside></h1>
+	
+
+<h1 id="propósito">propósito</h1>
+
+<ul>
+<li>este es el sitio de ejemplo para probar y desarrollar el tema <a href="https://javieriranzo3@bitbucket.org/javieriranzo3/tema-simple-hugo.git">tema-simple-hugo</a></li>
+
+<li><p>en base al tema <a href="https://github.com/schollz/onetwothree">onetwothree</a> de <a href="https://github.com/schollz">schollz</a></p></li>
+
+<li><p>mas información en el post sobre la <a href="exampleSitecontentpost2017-02-19-plantilla.md">plantilla</a></p></li>
+</ul>
+
+<h1 id="tema-simple-hugo"><code>tema-simple-hugo</code></h1>
+
+<ul>
+<li>para tener una plantilla que poder usar en varios proyectos con Hugo
+
+<ul>
+<li>en base a <a href="https://github.com/schollz/onetwothree"><code>onetwothree</code></a></li>
+</ul></li>
+<li><code>Use it at your own risk!</code></li>
+</ul>
+
+<h1 id="primer-paso">primer paso</h1>
+
+<ul>
+<li>crear el sitio</li>
+</ul>
+
+<pre><code class="language-bash">hugo new site inicio
+</code></pre>
+
+<ul>
+<li>crear el tema</li>
+</ul>
+
+<pre><code class="language-bash">hugo new theme tema-simple-hugo
+</code></pre>
+
+<h1 id="contenido">contenido</h1>
+
+<ul>
+<li>creo un primer post</li>
+</ul>
+
+<pre><code class="language-bash">hugo new post/holaMundo.md
+</code></pre>
+
+<ul>
+<li>se crea con el patrón establecido en <code>archetypes/default.md</code> por eso si hago</li>
+</ul>
+
+<pre><code class="language-bash">hugo new post/hola-mi-mundo.md
+</code></pre>
+
+<ul>
+<li>el título será hola mi mundo</li>
+</ul>
+
+<h1 id="tema">tema</h1>
+
+<ul>
+<li>para que se vea algo al construir el sitio tiene que existir un archivo index.html</li>
+<li>primero lo busca en <code>C:\proyectos\hugo\inicio\layouts\index.html</code> y si no lo encuentra allí lo busca en el tema en la misma jerarquía de directorio
+<code>C:\proyectos\hugo\inicio\themes\tema\layouts\index.html</code></li>
+</ul>
+
+<h1 id="archetypes">archetypes</h1>
+
+<ul>
+<li>sirven para tener plantillas cuando se usa <code>hugo new</code></li>
+<li>se usa el archivo <code>archetypes\default.md</code></li>
+<li>se puede tener otras plantillas  <code>hugo new resto\resto.md</code> usará el archivo <code>resto.md</code></li>
+</ul>
+
+<h1 id="templates">templates</h1>
+
+<ul>
+<li>la guía de <a href="https://gohugo.io/templates/introduction/">Hugo</a></li>
+<li>la documentación de <a href="https://golang.org/pkg/html/template/">golang</a></li>
+<li>para <a href="https://gohugo.io/templates/lists/">listas de páginas</a></li>
+<li>la guía <a href="https://gohugo.io/templates/introduction/">útil sobre templates</a></li>
+<li>un post del tema <a href="https://avianto.github.io/hugo-kiera/posts/goisforlovers/">kiera</a>
+
+<ul>
+<li>otro post del mismo <a href="https://avianto.github.io/hugo-kiera/posts/creating-a-new-theme/">tema</a></li>
+</ul></li>
+</ul>
+
+<h2 id="repositorio">repositorio</h2>
+
+<p><a href="https://bitbucket.org/javieriranzo3/tema-simple-hugo">bitbucket</a></p>
+
+<h1 id="características">características</h1>
+
+<ul>
+<li>página inicial con los posts</li>
+<li>navegación por directorios</li>
+<li>flecha para subir al inicio de la página</li>
+<li>el footer fijo al pie de página si la página es corta
+
+<ul>
+<li>con jQuery</li>
+</ul></li>
+<li>versión con tooltip con la fecha de creación</li>
+<li>búsqueda con <a href="https://lunrjs.com/"><code>lunr.js</code></a></li>
+<li>tags</li>
+<li>varios posibles calendarios</li>
+<li>footer que se adapta a la página aún siendo corta se queda al final</li>
+</ul>
+
+<h1 id="por-hacer">por hacer</h1>
+
+<ul>
+<li>cargar solo los JavaScript que se necesitan en cada página</li>
+<li>el pie de página solo se coloca al final al redimensionar</li>
+<li>búsqueda</li>
+<li>calendario
+
+<ul>
+<li>quitar el pie de los calendarios por tipo calendario</li>
+</ul></li>
+<li>la presentación con reveal.js</li>
+<li>revisar las librerías de jQuery para no repetir librerías</li>
+<li>ver porque tarda tanto en cargar la búsqueda y probar fuse</li>
+</ul>
+
+<h1 id="curiosidades">curiosidades</h1>
+
+<ul>
+<li>para el <a href="https://www.jose-aguilar.com/blog/bottom-footer-con-jquery/">footer al pie de página con jQuery</a></li>
+<li>para el <a href="https://es.stackoverflow.com/questions/25743/c%C3%B3mo-crear-un-footer-que-se-adapte-en-la-parte-inferior">footer al pie de página sin jQuery</a></li>
+</ul>
+
+<h1 id="examplesite"><code>exampleSite</code></h1>
+
+<ul>
+<li>ir al directorio <code>exampleSite</code> crear el directorio <code>themes</code> y clonar el tema</li>
+</ul>
+
+<pre><code class="language-bash">cd exampleSite
+mkdir themes
+git clone https://javieriranzo3@bitbucket.org/javieriranzo3/tema-simple-hugo.git
+</code></pre>
+
+</div>
+
+
+
+
+	<p><small><em>Escrito September 28, 2018. </em>
+		
+	</small></p>
+
+	<p>
+	<a href="/2018/09/27/">← calendario</a>&nbsp;
+	
+	</p>
+
+
+
+			<footer>
+			<div >
+					
+					<a href="#arriba"  class="arriba-link" ></a>
+			</div>
+			<div id="footer">
+			<p>Este sitio esta hecho con <a href="https://github.com/gohugoio/hugo">Hugo</a> usando la plantilla <a href="https://javieriranzo3@bitbucket.org/javieriranzo3/tema-simple-hugo.git">tema-simple-hugo</a> desarrollada por javier.</p>
+			</div>
+		</footer>
+
