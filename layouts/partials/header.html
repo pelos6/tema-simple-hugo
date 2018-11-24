@@ -23,11 +23,15 @@
 
 <body>
 	<header>
-		<div id="header"></div>
+		<div id="header">
 		<!-- para subir desde el final de la pagina-->
 		<a name="arriba" class="arriba-link"></a>
 		<a href="/" style="float: left;"><strong>{{ $.Site.Title }}</strong>
 		&nbsp;&nbsp;·&nbsp;&nbsp;
+		</a>
+		<a href="/tags/" style="float: left;" class="tooltip"><strong>T</strong>
+			<span class="tooltiptext"> Etiquetas </span>
+			&nbsp;&nbsp;·&nbsp;&nbsp;
 		</a>
 		{{ range $i, $e:= $.Site.Params.navigation }}
 			{{ if eq $i 0}}
@@ -35,11 +39,9 @@
 				{{ with $.Site.GetPage "page" . }}<a href="{{ lower .Permalink }}"><strong>{{ .Title }}</strong></a>
 			{{ end }}
 		{{ end }}
-		<a href="/tags/" style="float: left;" class="tooltip"><strong>T</strong>
-			<span class="tooltiptext"> Etiquetas </span>
-			&nbsp;&nbsp;·&nbsp;&nbsp;
-		</a>
+
 		<div class="tooltip"> versión: {{ .Site.Data.sitio.Version }}
 			<span class="tooltiptextversion"> fecha: {{ .Site.Data.sitio.fechaCreacion }} </span>
 		</div>
+	</div>
 	</header>
