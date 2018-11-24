@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,8 +36,11 @@
 		</a>
 		{{ range $i, $e:= $.Site.Params.navigation }}
 			{{ if eq $i 0}}
-			{{else}}&nbsp;&nbsp;·&nbsp;&nbsp;{{end}}
-				{{ with $.Site.GetPage "page" . }}<a href="{{ lower .Permalink }}"><strong>{{ .Title }}</strong></a>
+			{{else}}
+				&nbsp;&nbsp;·&nbsp;&nbsp;
+			{{end}}
+			{{ with $.Site.GetPage "page" . }}
+				<a href="{{ lower .Permalink }}"><strong>{{ .Title }}</strong></a>
 			{{ end }}
 		{{ end }}
 
