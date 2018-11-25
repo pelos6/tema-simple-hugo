@@ -19,6 +19,7 @@
   <script src="/js/jquery.countdown.js "></script>
 	<script src="/js/countdown.js"></script>
 	<script src="/js/caption.js"></script>
+	<link rel="stylesheet" href="{{ "css/highlight.min.css" | absURL }}" />
 
 </head>
 
@@ -35,11 +36,13 @@
 			&nbsp;&nbsp;·&nbsp;&nbsp;
 		</a>
 		{{ range $i, $e:= $.Site.Params.navigation }}
+	  {{/*	{{ $e }} */}}
 			{{ if eq $i 0}}
 			{{else}}
 				&nbsp;&nbsp;·&nbsp;&nbsp;
 			{{end}}
 			{{ with $.Site.GetPage "page" . }}
+			{{/* {{  .  }} */}}
 				<a href="{{ lower .Permalink }}"><strong>{{ .Title }}</strong></a>
 			{{ end }}
 		{{ end }}
