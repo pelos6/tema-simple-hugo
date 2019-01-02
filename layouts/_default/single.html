@@ -33,7 +33,7 @@
 	{{ if .NextInSection }}<a href="{{ .NextInSection.URL }}" style="float:right;">{{ .NextInSection.Title }} →</a>{{ end }}
 	</p>
 {{ end }}
-</div>
-{{ if (ne .Page.Title "calendario") }}
+
+{{ if not ( in .Page.Title "calendario") }}
 	{{ partial "footer.html" . }}
 {{ end }}
