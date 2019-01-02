@@ -101,3 +101,8 @@ footer.bottom {
 .tooltip:hover .tooltiptextversion {
   visibility: visible;
 }
+
+.placa-primaria{
+  color : red;
+  font-style: oblique;
+  }
