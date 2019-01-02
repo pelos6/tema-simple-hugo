@@ -7,20 +7,6 @@
 <div class="content" id="content">
 	<h1>{{ .Title }} <aside>{{ range .Params.tags }}<a href="/tags/{{.}}/" class="w3-tag">/{{.}}</a>&nbsp;&nbsp;&nbsp;{{end}}</aside></h1>
 	{{ .Content }}
-{{ if (eq .Page.Title "salidas") }}
-		<ul>
-		{{ range sort .Site.Data.salidas  "dia" "desc"  }}
-		<li>{{.dia}}-{{.kilometros}}</li>
-		{{ end }}
-	</ul>
-{{ end }}
-{{ if (eq .Page.Title "pesos") }}
-		<ul>
-		{{ range sort .Site.Data.pesos  "dia" "desc"  }}
-		<li>{{.dia}}-{{.peso}}</li>
-		{{ end }}
-	</ul>
-{{ end }}
 {{ if (eq .Type "post") }}
 	<p><small><em>Escrito {{ .Date.Format "January 2, 2006"}}. </em>
 		{{ if $.Site.Params.twitter  }} 
