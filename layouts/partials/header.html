@@ -19,7 +19,9 @@
   <script src="/js/jquery.countdown.js "></script>
 	<script src="/js/countdown.js"></script>
 	<script src="/js/caption.js"></script>
-	<link rel="stylesheet" href="{{ "css/highlight.min.css" | absURL }}" />
+	<!-- <link rel="stylesheet" href="{{ "css/highlight.min.css" | absURL }}" /> -->
+	<link rel="stylesheet" href="/css/highlight/{{ with .Site.Params.highlightStyle }}{{ . }}{{ else }}default{{ end }}.css">
+	
 
 </head>
 
