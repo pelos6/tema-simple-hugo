@@ -48,9 +48,8 @@
 				<a href="{{ lower .Permalink }}"><strong>{{ .Title }}</strong></a>
 			{{ end }}
 		{{ end }}
-
-		<div class="tooltip"> versión: {{ .Site.Data.sitio.Version }} +1
-			<span class="tooltiptextversion"> fecha: {{ .Site.Data.sitio.fechaCreacion }} </span>
+		<div class="tooltip"> versión: {{ .Site.Data.sitioVersion.Version }} +1
+			<span class="tooltiptextversion"> fecha: {{ .Site.Data.sitioFechaCreacion.fechaCreacion }} </span>
 		</div>
 	</div>
 	</header>
