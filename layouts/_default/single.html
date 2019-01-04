@@ -4,14 +4,9 @@
 
 {{ partial "toc.html" . }}
 
-
 <div class="content" id="content">
 	<h1>{{ .Title }} <aside>{{ range .Params.tags }}<a href="/tags/{{.}}/" class="w3-tag">/{{.}}</a>&nbsp;&nbsp;&nbsp;{{end}}</aside></h1>
 	{{ .Content }}
-</div>
-
-
-
 {{ if (eq .Type "post") }}
 	<p><small><em>Escrito {{ .Date.Format "January 2, 2006"}}. </em>
 		{{ if $.Site.Params.twitter  }} 

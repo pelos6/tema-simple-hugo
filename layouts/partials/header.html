@@ -19,7 +19,9 @@
   <script src="/js/jquery.countdown.js "></script>
 	<script src="/js/countdown.js"></script>
 	<script src="/js/caption.js"></script>
-	<link rel="stylesheet" href="{{ "css/highlight.min.css" | absURL }}" />
+	<!-- <link rel="stylesheet" href="{{ "css/highlight.min.css" | absURL }}" /> -->
+	<link rel="stylesheet" href="/css/highlight/{{ with .Site.Params.highlightStyle }}{{ . }}{{ else }}default{{ end }}.css">
+	
 
 </head>
 
@@ -46,9 +48,8 @@
 				<a href="{{ lower .Permalink }}"><strong>{{ .Title }}</strong></a>
 			{{ end }}
 		{{ end }}
-
-		<div class="tooltip"> versión: {{ .Site.Data.sitio.Version }}
-			<span class="tooltiptextversion"> fecha: {{ .Site.Data.sitio.fechaCreacion }} </span>
+		<div class="tooltip"> versión: {{ .Site.Data.sitioVersion.Version }} +1
+			<span class="tooltiptextversion"> fecha: {{ .Site.Data.sitioFechaCreacion.fechaCreacion }} </span>
 		</div>
 	</div>
 	</header>
