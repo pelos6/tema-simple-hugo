@@ -9,7 +9,8 @@ function initLunr() {
     // if (!endsWith(baseurl,"/")){
     //     baseurl = baseurl+'/'
     // };
-    baseurl = '/bitacora/'
+    baseurl = '/post/'
+    // baseurl = '/'
     console.log('antes de cargar el indice '+ baseurl);
     // First retrieve the index file
     $.getJSON(baseurl +"index.json")
