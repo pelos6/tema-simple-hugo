@@ -1,0 +1,14 @@
+
+[
+  {{ range $index, $e := (where .Data.Pages "Type" "post" ) }}
+  {{ if $index }}, {{ end }}
+  {
+      "uri": "{{ .Permalink | absURL }}",
+      "url": "{{ .Permalink | absURL }}",
+      "title": "{{ htmlEscape .Params.Excerpt}}",
+      "start": "{{ dateFormat "2006-01-02" .Date }}",
+      "description": "{{ htmlEscape .Params.Excerpt}}",
+      "content": {{$e.Plain | jsonify}}
+  }
+  {{ end }}
+]
