@@ -1,19 +1,23 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 
 {{ partial "breadcrumb.html" . }}
 
 {{ partial "toc.html" . }}
 
 <div class="content" id="content">
-	<h1>{{ .Title }} <aside>{{ range .Params.tags }}<a href="/tags/{{.}}/" class="w3-tag">/{{.}}</a>&nbsp;&nbsp;&nbsp;{{end}}</aside></h1>
+	<h1>{{ .Title }} 
+		<aside>
+			{{ if .Params.tags }}
+				<i data-feather="tag"></i>
+					{{ range .Params.tags }}<a href="/tags/{{.}}/">/{{.}}</a>&nbsp;&nbsp;&nbsp;
+					{{end}}
+			{{end}}
+		</aside>
+	</h1>
 	{{ .Content }}
 {{ if (eq .Type "post") }}
 	<p><small><em>Escrito {{ .Date.Format "January 2, 2006"}}. </em>
-		{{ if $.Site.Params.twitter  }} 
-		Send feedback to <a  href="https://twitter.com/intent/tweet?text=%40{{ $.Site.Params.twitter }}%20%23{{ replace (.URL) "/" "" }}%20">@{{ $.Site.Params.twitter }}</a>.
-		{{ end }}
 	</small></p>
-
 	<p>
 	{{ if .PrevInSection }}<a href="{{ .PrevInSection.URL }}">← {{ .PrevInSection.Title }}</a>&nbsp;{{end}}
 	{{ if .NextInSection }}<a href="{{ .NextInSection.URL }}" style="float:right;">{{ .NextInSection.Title }} →</a>{{ end }}
@@ -22,4 +26,6 @@
 
 {{ if not ( in .Page.Title "calendario") }}
 	{{ partial "footer.html" . }}
+{{ end }}
+
 {{ end }}

@@ -1,5 +1,5 @@
-{{ partial "header.html" . }}
-<div class="content" id="content"></div>
+{{ define "main" }}
+<div class="content" id="content">
     <p>Detalle del evento:</p>
     <h2>{{ .Title }}</h2>
     {{ if ne .Params.Inicio nil }}
@@ -12,3 +12,4 @@
     <p>Etapa: {{ .Params.Estilo }}</p>
     {{ .Content }}
 </div>
+{{ end }}

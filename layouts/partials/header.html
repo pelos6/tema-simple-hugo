@@ -1,55 +1,27 @@
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>{{ .Title }}</title>
-	<link rel="shortcut icon" href=" /favicon.ico " type="image/x-icon">
-	<link rel="icon" href=" /favicon.ico " type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="/css/style{{ $.Site.Params.style }}.css">
-	<link rel="stylesheet" type="text/css" href="/css/estilos.css">
-	<script src="/js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="/js/moment.min.js"></script>
-	<script src="/js/fullcalendar-3.2.0.min.js"></script>
-	<script src='/js/fullCalendarLocaleEs-3.3.1.js'></script>
-  <script src="/js/bootstrap-3.3.7.min.js"></script>
-  <script src="/js/jquery.countdown.js "></script>
-	<script src="/js/countdown.js"></script>
-	<script src="/js/caption.js"></script>
-	<!-- <link rel="stylesheet" href="{{ "css/highlight.min.css" | absURL }}" /> -->
-	<link rel="stylesheet" href="/css/highlight/{{ with .Site.Params.highlightStyle }}{{ . }}{{ else }}default{{ end }}.css">
-	
-
-</head>
-
-<body>
-	<header>
-		<div id="header">
-		<!-- para subir desde el final de la pagina-->
-		<a name="arriba" class="arriba-link"></a>
-		<a href="/" style="float: left;"><strong>{{ $.Site.Title }}</strong>
+<header>
+	<div id="header">
+	<!-- para subir desde el final de la pagina-->
+	<a name="arriba" class="arriba-link"></a>
+	<a href="/" style="float: left;"><strong>{{ $.Site.Title }}</strong>
+	&nbsp;&nbsp;·&nbsp;&nbsp;
+	</a>
+	<a href="/tags/" style="float: left;" class="tooltip"><strong>T</strong>
+		<span class="tooltiptext"> Etiquetas </span>
 		&nbsp;&nbsp;·&nbsp;&nbsp;
-		</a>
-		<a href="/tags/" style="float: left;" class="tooltip"><strong>T</strong>
-			<span class="tooltiptext"> Etiquetas </span>
+	</a>
+	{{ range $i, $e:= $.Site.Params.navigation }}
+  {{/*	{{ $e }} */}}
+		{{ if eq $i 0}}
+		{{else}}
 			&nbsp;&nbsp;·&nbsp;&nbsp;
-		</a>
-		{{ range $i, $e:= $.Site.Params.navigation }}
-	  {{/*	{{ $e }} */}}
-			{{ if eq $i 0}}
-			{{else}}
-				&nbsp;&nbsp;·&nbsp;&nbsp;
-			{{end}}
-			{{ with $.Site.GetPage "page" . }}
-			{{/* {{  .  }} */}}
-				<a href="{{ lower .Permalink }}"><strong>{{ .Title }}</strong></a>
-			{{ end }}
+		{{end}}
+		{{ with $.Site.GetPage "page" . }}
+		{{/* {{  .  }} */}}
+			<a href="{{ lower .Permalink }}"><strong>{{ .Title }}</strong></a>
 		{{ end }}
-		<div class="tooltip"> versión: {{ .Site.Data.sitioVersion.Version }} +1
-			<span class="tooltiptextversion"> fecha: {{ .Site.Data.sitioFechaCreacion.fechaCreacion }} </span>
-		</div>
+	{{ end }}
+	<div class="tooltip"> versión: {{ .Site.Data.sitioVersion.Version }} +1
+		<span class="tooltiptextversion"> fecha: {{ .Site.Data.sitioFechaCreacion.fechaCreacion }} </span>
 	</div>
-	</header>
+</div>
+</header>

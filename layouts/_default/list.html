@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 {{ partial "breadcrumb.html" . }}
     <div class="content" id="content">
       <br>
@@ -10,11 +10,12 @@
           {{ range .Pages }}
           <ul>
               <aside>{{ if .Params.Date }} {{ .Date.Format "January 2, 2006"}} {{ end }}        
-                  {{ if .Params.tags }} <em>{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}<a href="/tags/{{$e}}/">{{ $e }}</a>{{ end }}</em> {{ end }}
+                  {{ if .Params.tags }} <em><i data-feather="tag"></i>{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}<a href="/tags/{{$e}}/">{{ $e }}</a>{{ end }}</em> {{ end }}
               </aside>
-              <a href="{{ .Permalink }}" style="color:black;">{{ .Title }}</a>
+              <a href="{{ .Permalink }}" style="color:black;"><i data-feather="edit"></i>{{ .Title }}</a>
               {{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span> {{ end }}
             </ul>
           {{ end }}
     </div>
   {{ partial "footer.html" . }}
+{{ end }}
