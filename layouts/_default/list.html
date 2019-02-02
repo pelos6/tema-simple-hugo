@@ -4,7 +4,7 @@
       <br>
           <ul>
           {{ range .Sections}}
-              <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
+              <li><a href="{{ .RelPermalink}}"><i data-feather="folder"></i>{{ .Title }}</a></li>
           {{ end }}
           </ul>
           {{ range .Pages }}

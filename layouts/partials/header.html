@@ -2,11 +2,19 @@
 	<div id="header">
 	<!-- para subir desde el final de la pagina-->
 	<a name="arriba" class="arriba-link"></a>
-	<a href="/" style="float: left;"><strong>{{ $.Site.Title }}</strong>
+	<a href="/" style="float: left;"><strong><i data-feather="home"></i></strong>
 	&nbsp;&nbsp;·&nbsp;&nbsp;
 	</a>
-	<a href="/tags/" style="float: left;" class="tooltip"><strong>T</strong>
+	<a href="/tags/" style="float: left;" class="tooltip"><strong><i data-feather="tag"></i></strong>
 		<span class="tooltiptext"> Etiquetas </span>
+		&nbsp;&nbsp;·&nbsp;&nbsp;
+	</a>
+	<a href="/calendario/" style="float: left;" class="tooltip"><strong><i data-feather="calendar"></i></strong>
+		<span class="tooltiptext"> Calendario </span>
+		&nbsp;&nbsp;·&nbsp;&nbsp;
+	</a>
+	<a href="/busqueda/busqueda" style="float: left;" class="tooltip"><strong><i data-feather="search"></i></strong>
+		<span class="tooltiptext"> Busqueda </span>
 		&nbsp;&nbsp;·&nbsp;&nbsp;
 	</a>
 	{{ range $i, $e:= $.Site.Params.navigation }}
