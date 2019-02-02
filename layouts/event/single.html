@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ partial "breadcrumb.html" . }}
+{{ partial "toc.html" . }}
 <div class="content" id="content">
     <p>Detalle del evento:</p>
     <h2>{{ .Title }}</h2>
@@ -12,4 +14,7 @@
     <p>Etapa: {{ .Params.Estilo }}</p>
     {{ .Content }}
 </div>
+{{ if not ( in .Page.Title "calendario") }}
+	{{ partial "footer.html" . }}
+{{ end }}
 {{ end }}
