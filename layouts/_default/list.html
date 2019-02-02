@@ -4,7 +4,7 @@
       <br>
           <ul>
           {{ range .Sections}}
-              <li><a href="{{ .RelPermalink}}"><i data-feather="folder"></i>{{ .Title }}</a></li>
+              <li><a href="{{ .RelPermalink}}"><i data-feather="folder-plus"></i>&nbsp;{{ .Title }}</a></li>
           {{ end }}
           </ul>
           {{ range .Pages }}
@@ -12,7 +12,7 @@
               <aside>{{ if .Params.Date }} {{ .Date.Format "January 2, 2006"}} {{ end }}        
                   {{ if .Params.tags }} <em><i data-feather="tag"></i>{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}<a href="/tags/{{$e}}/">{{ $e }}</a>{{ end }}</em> {{ end }}
               </aside>
-              <a href="{{ .Permalink }}" style="color:black;"><i data-feather="edit"></i>{{ .Title }}</a>
+              <a href="{{ .Permalink }}" style="color:black;"><i data-feather="file-text">&nbsp;</i>{{ .Title }}</a>
               {{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span> {{ end }}
             </ul>
           {{ end }}
