@@ -15,15 +15,13 @@
 		</aside>
 	</h1>
 	{{ .Content }}
-{{ if (eq .Type "post") }}
-	<p><small><em>Escrito {{ .Date.Format "January 2, 2006"}}. </em>
-	</small></p>
-	<p>
-	{{ if .PrevInSection }}<a href="{{ .PrevInSection.URL }}">← {{ .PrevInSection.Title }}</a>&nbsp;{{end}}
-	{{ if .NextInSection }}<a href="{{ .NextInSection.URL }}" style="float:right;">{{ .NextInSection.Title }} →</a>{{ end }}
-	</p>
-{{ end }}
-
-{{ partial "footer.html" . }}
+	{{ if (eq .Type "post") }}
+		<p><small><em>Escrito {{ .Date.Format "January 2, 2006"}}. </em>
+		</small></p>
+		<p>
+		{{ if .PrevInSection }}<a href="{{ .PrevInSection.URL }}">← {{ .PrevInSection.Title }}</a>&nbsp;{{end}}
+		{{ if .NextInSection }}<a href="{{ .NextInSection.URL }}" style="float:right;">{{ .NextInSection.Title }} →</a>{{ end }}
+		</p>
+	{{ end }}
 
 {{ end }}

@@ -14,7 +14,4 @@
     <p>Etapa: {{ .Params.Estilo }}</p>
     {{ .Content }}
 </div>
-{{ if not ( in .Page.Title "calendario") }}
-	{{ partial "footer.html" . }}
-{{ end }}
 {{ end }}
