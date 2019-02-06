@@ -1,17 +1,12 @@
-
 {{ define "main"}}
-<link rel="stylesheet" href="css/alert-style.css">
-<main id="main">
-  <div class="content" id="content">
-    <div id="main" role="main">
-      <div class="message">
-          <div class="animation-alien">
-              <p>
-                  The page you are looking for is either stolen by aliens or never existed.
-              </p>
-          </div>
-      </div>
-  </div>
-  </div>
-</main>
+<div class="content" id="main-404">
+    <div class="message">
+        <div class="animation-alien">
+        </div>
+        <p>
+            La página que estás buscando nunca ha existido o ha sido robada por alienígenas
+        </p>
+    </div>
+    <h3 id="title" class="message"><a href="{{ "/" | relURL }}">A casa</a></h3>
+</div>
 {{ end }}

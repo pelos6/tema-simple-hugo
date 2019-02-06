@@ -105,4 +105,19 @@ footer.bottom {
 .placa-primaria{
   color : red;
   font-style: oblique;
-  }
+}
+
+div#main-404{
+    background-color: #16AD85;
+}
+
+/* para el 404 alienígena */
+.animation-alien {
+  padding-top: 250px;
+  background: url(../images/404-alien.gif) no-repeat 50% 0;
+  max-width: 280px;
+  margin: 0 auto;
+}
+.message{
+  text-align: center;
+}
