@@ -5,7 +5,10 @@
 			</div>
 			<div id="footer">
 			<p>Este sitio esta hecho con <a href="https://github.com/gohugoio/hugo">Hugo</a> usando la plantilla <a href="https://javieriranzo3@bitbucket.org/javieriranzo3/tema-simple-hugo.git">tema-simple-hugo</a> desarrollada por javier.</p>
-			</div>
+			{{ if not .Lastmod.IsZero }}
+			Última modificación  en repositorio:	{{ safeHTML ( .Lastmod.Format "2 January, 2006 15:04:05 MST"  )  }}
+			{{ end }}	
+		</div>
 		</footer>
 <script src="/js/feather.min.js"></script>
 <script>

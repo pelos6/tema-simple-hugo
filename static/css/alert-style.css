@@ -1,0 +1,52 @@
+body {
+    background-color: #16AD85;
+}
+
+.message {
+    font-family: sans-serif;
+    font-size: 9.6px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+.message p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin-bottom: 1em;
+}
+
+.message a {
+    text-decoration: underline;
+}
+
+.message h1 {
+    color: #FFF;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.animation-alien {
+    padding-top: 250px;
+    background: url(../images/404-alien.gif) no-repeat 50% 0;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.static-page .contact-us a {
+    color: #FFF;
+}
+
+.static-page .wrap {
+    background: #16AD85; /* TODO: change to new FROONT color: #56D58E */
+}
+
+.static-page #main {
+    max-width: 1200px;
+    width: auto;
+}
+
+.static-page .message {
+    margin-top: 100px;
+}
