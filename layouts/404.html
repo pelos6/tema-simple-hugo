@@ -1,1 +1,12 @@
-esto es un 404 ...
+{{ define "main"}}
+<div class="content" id="main-404">
+    <div class="message">
+        <div class="animation-alien">
+        </div>
+        <p>
+            La página que estás buscando nunca ha existido o ha sido robada por alienígenas
+        </p>
+    </div>
+    <h3 id="title" class="message"><a href="{{ "/" | relURL }}">A casa</a></h3>
+</div>
+{{ end }}

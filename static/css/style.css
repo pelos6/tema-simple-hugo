@@ -148,19 +148,20 @@ li {
 table { 
 	margin-bottom: 1.5em;
 	border-collapse: collapse;
-	width: 95%;
+	text-align: left;
 }
 
-table tr + tr {
-	border-top: 1px solid #ccc;
-}
-table td + td {
-	border-left: 1px solid #ccc;
+td, th {
+  border: 1px solid #ddd;
+	padding: 8px;
 }
 
+th {
+	background-color: aliceblue;
+}
+p
 table td {
 	padding: 0.4em;
-	text-align: center;
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
 	-o-hyphens: none;
@@ -176,13 +177,14 @@ table th {
 	line-height: 1.05;
 }
 
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
 img {
 	width: 100%;
 	border-radius: 25px;
 }
-
-
-
 
 a {
 	text-decoration: none;
