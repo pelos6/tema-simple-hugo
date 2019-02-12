@@ -1,7 +1,7 @@
 <div class="content" id="content">
   <h1>{{ .Site.Title  }}</h1>
   <h2>{{ title .Data.Term  }} posts</h2>
-      {{ range first 100000 .Pages }}
+      {{ range (.Pages.ByWeight )}}
         {{ if eq .Type "post"}}
             <p>
             <aside><i data-feather="calendar"></i>{{ .Date.Format "January 2, 2006"}} 
