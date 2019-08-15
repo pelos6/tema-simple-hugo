@@ -121,3 +121,11 @@ div#main-404{
 .message{
   text-align: center;
 }
+
+/* .task-list input {
+  opacity: 100;
+} */
+
+.task-list-item {
+  opacity: 100;
+}
