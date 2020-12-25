@@ -14,7 +14,7 @@
 			{{end}}
 		</aside>
 	</h1>
-	{{ .Content }}
+	{{ replace .Content "disabled class" "class" | safeHTML }}
 	{{ if (eq .Type "post") }}
 		<p><small><em>Escrito {{ .Date.Format "January 2, 2006"}}. </em>
 		</small></p>
