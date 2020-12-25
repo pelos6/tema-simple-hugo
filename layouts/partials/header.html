@@ -15,7 +15,7 @@
 		&nbsp;&nbsp;·&nbsp;&nbsp;
 	</a>
 	<a href="/busqueda/busqueda" style="float: left;" class="tooltip"><strong><i data-feather="search"></i></strong>
-		<span class="tooltiptext"> Busqueda </span>
+		<span class="tooltiptext"> Búsqueda </span>
 		&nbsp;&nbsp;·&nbsp;&nbsp;
 	</a>
 	{{ range $i, $e:= $.Site.Params.navigation }}
@@ -29,8 +29,10 @@
 			<a href="{{ lower .Permalink }}"><strong>{{ .Title }}</strong></a>
 		{{ end }}
 	{{ end }}
-	<div class="tooltip"> versión: {{ .Site.Data.sitioVersion.Version }} +1
+	<div class="tooltip"> versión: {{ .Site.Data.sitioVersion.Version }}
 		<span class="tooltiptextversion"> fecha: {{ .Site.Data.sitioFechaCreacion.fechaCreacion }} </span>
 	</div>
+	&nbsp;&nbsp;·&nbsp;&nbsp;
+	<button type="button" class="btn btn-warning navbar-btn" id="botonLogout">Salir</button>
 </div>
 </header>
