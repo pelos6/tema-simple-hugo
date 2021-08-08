@@ -5,6 +5,14 @@
 
 * una demo de esta plantilla esta disponible en [tema-simple-hugo-demo](https://javieriranzo3@bitbucket.org/javieriranzo3/tema-simple-hugo-demo)
 
+## Instalacción
+
+```
+git clone https://javieriranzo3@bitbucket.org/javieriranzo3/tema-simple-hugo.git
+$ cd tema-simple-hugo/exampleSite/
+$ hugo server --themesDir ../..
+```
+
 # flujo
 
 * dos flujos distintos
@@ -15,6 +23,10 @@
 ## repositorio
 
 [bitbucket](https://bitbucket.org/javieriranzo3/tema-simple-hugo.git)
+
+## TODO
+
+* ver porque con la versión superior a la 0.40 de hugo no se ve el primer nivel del toc ni el calendarioñ
 
 ## changelog
 

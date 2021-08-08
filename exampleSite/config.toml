@@ -1,0 +1,129 @@
+baseURL = "/"
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+languageCode = "es"
+title = "tema-simple-hugo demo"
+theme = "tema-simple-hugo"
+# para sacar la información de la última modificación en el repositorio Git
+enableGitInfo = true
+
+pluralizeListTitles = false
+# canonifyurls = true
+
+# para poder usar emoticonos
+enableEmoji = true
+
+DefaultContentLanguage = "es"
+metaDataFormat = "yaml"
+
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+
+# para que se generen las páginas con fecha posterior a hoy
+buildFuture = true
+
+[params]
+# la configuración del menú. 
+# si Hugo no puede encontrar la página indicada no sale la opción
+    navigation = ["motivacion", "ejemploMenu", "graficoPesos", "casas"]
+    highlightStyle = "hybrid"
+
+# posibles estilos para el resaltado de código:
+# highlightStyle = "agate"
+# highlightStyle = "androidstudio"
+# highlightStyle = "arduino-light"
+# highlightStyle = "arta"
+# highlightStyle = "ascetic"
+# highlightStyle = "atelier-cave-dark"
+# highlightStyle = "atelier-cave-light"
+# highlightStyle = "atelier-dune-dark"
+# highlightStyle = "atelier-dune-light"
+# highlightStyle = "atelier-estuary-dark"
+# highlightStyle = "atelier-estuary-light"
+# highlightStyle = "atelier-forest-dark"
+# highlightStyle = "atelier-forest-light"
+# highlightStyle = "atelier-heath-dark"
+# highlightStyle = "atelier-heath-light"
+# highlightStyle = "atelier-lakeside-dark"
+# highlightStyle = "atelier-lakeside-light"
+# highlightStyle = "atelier-plateau-dark"
+# highlightStyle = "atelier-plateau-light"
+# highlightStyle = "atelier-savanna-dark"
+# highlightStyle = "atelier-savanna-light"
+# highlightStyle = "atelier-seaside-dark"
+# highlightStyle = "atelier-seaside-light"
+# highlightStyle = "atelier-sulphurpool-dark"
+# highlightStyle = "atelier-sulphurpool-light"
+# highlightStyle = "atom-one-dark"
+# highlightStyle = "atom-one-light"
+# highlightStyle = "brown-paper"
+# highlightStyle = "brown-papersq"
+# highlightStyle = "codepen-embed"
+# highlightStyle = "color-brewer"
+# highlightStyle = "darcula"
+# highlightStyle = "dark"
+# highlightStyle = "darkula"
+# highlightStyle = "default"
+# highlightStyle = "docco"
+# highlightStyle = "dracula"
+# highlightStyle = "far"
+# highlightStyle = "foundation"
+# highlightStyle = "github-gist"
+# highlightStyle = "github"
+# highlightStyle = "googlecode"
+# highlightStyle = "grayscale"
+# highlightStyle = "gruvbox-dark"
+# highlightStyle = "gruvbox-light"
+# highlightStyle = "hopscotch"
+# highlightStyle = "hybrid"
+# highlightStyle = "idea"
+# highlightStyle = "ir-black"
+# highlightStyle = "kimbie"
+# highlightStyle = "kimbie"
+# highlightStyle = "magula"
+# highlightStyle = "mono-blue"
+# highlightStyle = "monokai-sublime"
+# highlightStyle = "monokai"
+# highlightStyle = "obsidian"
+# highlightStyle = "ocean"
+# highlightStyle = "paraiso-dark"
+# highlightStyle = "paraiso-light"
+# highlightStyle = "pojoaque"
+# highlightStyle = "pojoaque"
+# highlightStyle = "purebasic"
+# highlightStyle = "qtcreator_dark"
+# highlightStyle = "qtcreator_light"
+# highlightStyle = "railscasts"
+# highlightStyle = "rainbow"
+# highlightStyle = "routeros"
+# highlightStyle = "school-book"
+# highlightStyle = "school-book"
+# highlightStyle = "solarized-dark"
+# highlightStyle = "solarized-light"
+# highlightStyle = "sunburst"
+# highlightStyle = "tomorrow-night-blue"
+# highlightStyle = "tomorrow-night-bright"
+# highlightStyle = "tomorrow-night-eighties"
+# highlightStyle = "tomorrow-night"
+# highlightStyle = "tomorrow"
+# highlightStyle = "vs"
+# highlightStyle = "vs2015"
+# highlightStyle = "xcode"
+# highlightStyle = "xt256"
+# highlightStyle = "zenburn"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+section = ["HTML", "JSON"]
+
+# crea el contenido del directorio post con una estructura como la que 
+# usaba en jekyll 
+[permalinks]
+## bitacora = "/:year/:month/:day/bitacora/"
+# post = "/:year/:month/:day/:title/"
+post = "/post/:filename"
+motivacion = "/motivacion/:filename"
+
+[taxonomies]
+tag = "tags"
