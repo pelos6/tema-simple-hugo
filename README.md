@@ -17,7 +17,9 @@ $ hugo server --themesDir ../..
 
 ## TODO
 
-* ver porque con la versión superior a la 0.40 de hugo no se ve el primer nivel del toc ni el calendarioñ
+* [x] ver porque con la versión superior a la 0.40 de hugo no se ve el primer nivel del toc 
+  * solucionado añadiendo una instrucción en config.toml
+* ver porque con la 0.6 no se ve el calendario
 
 ## changelog
 

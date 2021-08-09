@@ -127,3 +127,8 @@ motivacion = "/motivacion/:filename"
 
 [taxonomies]
 tag = "tags"
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 6
+    startLevel = 1
