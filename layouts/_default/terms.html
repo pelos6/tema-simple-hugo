@@ -2,14 +2,16 @@
 
 <h1>{{ .Title }}</h1>
 
-<ul>
-  {{ range .Data.Terms.ByCount }}
+{{ $type := .Type }}
+{{ range $key, $value := .Data.Terms.ByCount }}
+  {{ $name := .Name }}
+  {{ $count := .Count }}
+  {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
   <p>
-    <a class="btn btn-outline-dark font-125" href="{{ .Page.Permalink }}">
-      <span class="badge badge-dark">{{ .Count }}</span> {{ .Page.Title }}
+    <a class="btn btn-outline-dark font-125" href="{{ .Permalink }}">
+      <span class="badge badge-dark">{{ $count }}</span> {{ $name }}
     </a>
   </p>
   {{ end }}
-</ul>
-
+{{ end }}
 {{ end }}
