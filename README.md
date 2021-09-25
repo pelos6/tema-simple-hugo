@@ -15,7 +15,7 @@ git clone https://javieriranzo3@bitbucket.org/javieriranzo3/tema-simple-hugo.git
 
 * para ver la plantilla con el sitio de ejemplo
 
-```
+```bash
 cd exampleSite
 hugo server --themesDir ../.. --noHTTPCache --buildDrafts --watch
 hugo server --themesDir ../.. --noHTTPCache --buildDrafts --watch --verbose
