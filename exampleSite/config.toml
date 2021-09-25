@@ -26,8 +26,8 @@ buildFuture = true
 [params]
 # la configuración del menú. 
 # si Hugo no puede encontrar la página indicada no sale la opción
-    navigation = ["motivacion", "ejemploMenu", "graficoPesos", "casas"]
-    highlightStyle = "hybrid"
+navigation = ["motivacion", "ejemploMenu", "graficoPesos", "casas"]
+highlightStyle = "hybrid"
 
 # posibles estilos para el resaltado de código:
 # highlightStyle = "agate"
@@ -132,3 +132,8 @@ tag = "tags"
   [markup.tableOfContents]
     endLevel = 6
     startLevel = 1
+
+    
+# para que se renderice el calendario
+[markup.goldmark.renderer]
+unsafe= true
