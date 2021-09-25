@@ -23,7 +23,7 @@ images:
   * sacado de [este enlace](https://accelera.uab.cat/help.php?file=advanced_markdown.html#embedded)
   * ejemplo [w3school](https://www.w3schools.com/html/html_images.asp)
 
-* <img src="/img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+* <img src="/images/blog/img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
 <!-- * <img src="/img_girl.jpg" alt="Girl in a jacket" style="width:500px;"> -->
 
 * ejemplo en notas-personal recetas
