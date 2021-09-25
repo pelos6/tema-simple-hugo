@@ -46,4 +46,5 @@ images:
 
 {{< gallery dir="/img/viaje/" />}} {{< load-photoswipe >}}
 
-* cuando aproximas el cursor desaparece la imagén
+* cuando aproximas el cursor desaparece la imagen
+* modificado

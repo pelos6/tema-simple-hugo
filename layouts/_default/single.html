@@ -13,7 +13,7 @@
 	</h1>
 	{{ replace .Content "disabled class" "class" | safeHTML }}
 	{{ if (eq .Type "post") }}
-		<p><small><em>Escrito {{ .Date.Format "January 2, 2006"}}. </em>
+		<p><small><em>Escrito {{ .Date.Format "2 January 2006"}}. </em>
 		</small></p>
 		<p>
 		{{ if .PrevInSection }}<a href="{{ .PrevInSection.URL }}">← {{ .PrevInSection.Title }}</a>&nbsp;{{end}}
